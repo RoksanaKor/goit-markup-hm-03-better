@@ -10,7 +10,6 @@ img {
 
 p {
  text-decoration: none;
- margin: none;
 }
 
 h1,
@@ -53,6 +52,7 @@ body {
 }
 
 .text-body {
+ color: var(--main-color);
  font-size: 16px;
  line-height: 1.5;
  letter-spacing: 0.32px;
@@ -405,4 +405,3 @@ body {
  padding: 0;
  border: 0;
 }
-
