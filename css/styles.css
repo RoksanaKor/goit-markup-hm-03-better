@@ -29,19 +29,19 @@ dl {
 }
 
 :root {
- --primary-heading: #2E2F42;
- --bright-contrast: #F4F4FD;
- --dark-contrast: #4D5AE5;
- --brighter-contrast: #FFF;
- --active: #404BBF;
- --main-font: #434455;
- --border: #E7E9FC;
+ --color-heading-primary: #2E2F42;
+ --color-contrast-bright: #F4F4FD;
+ --color-contrast-dark: #4D5AE5;
+ --color-contrast-brighter: #FFF;
+ --color-active: #404BBF;
+ --color-font-main: #434455;
+ --color-border: #E7E9FC;
 }
 
 body {
  font-family: Roboto, sans-serif;
  font-style: normal;
- color: var(--main-font);
+ color: var(--color-font-main);
 }
 
 .link {
@@ -49,7 +49,7 @@ body {
 }
 
 .text-body {
- color: var(--main-font);
+ color: var(--color-font-main);
  font-size: 16px;
  line-height: 1.5;
  letter-spacing: 0.32px;
@@ -57,7 +57,7 @@ body {
 }
 
 .text-h2 {
- color: var(--primary-heading);
+ color: var(--color-heading-primary);
  text-align: center;
  font-size: 36px;
  line-height: 1.11;
@@ -68,7 +68,7 @@ body {
 
 
 .text-h3 {
- color: var(--primary-heading);
+ color: var(--color-heading-primary);
  font-size: 20px;
  font-weight: 500;
  line-height: 1.2;
@@ -97,7 +97,7 @@ body {
 
 
 .header-border {
- border-bottom: 1px solid var(--border)
+ border-bottom: 1px solid var(--color-border);
 }
 
 .nav-header {
@@ -114,7 +114,7 @@ body {
 
 
 .logo-web-font {
- color: var(--dark-contrast);
+ color: var(--color-contrast-dark);
  font-family: Raleway;
  font-size: 18px;
  font-weight: 800;
@@ -124,7 +124,7 @@ body {
 }
 
 .logo-studio-font-bright {
- color: var(--bright-contrast);
+ color: var(--color-contrast-bright);
  font-family: Raleway;
  font-size: 18px;
  font-weight: 800;
@@ -134,7 +134,7 @@ body {
 }
 
 .logo-studio-font {
- color: var(--primary-heading);
+ color: var(--color-heading-primary);
  font-family: Raleway;
  font-size: 18px;
  font-weight: 800;
@@ -144,7 +144,7 @@ body {
 }
 
 .nav-menu {
- color: var(--primary-heading);
+ color: var(--color-heading-primary);
  font-size: 16px;
  font-weight: 500;
  line-height: 1.5;
@@ -152,15 +152,17 @@ body {
  text-decoration: none;
  display: flex;
  gap: 40px;
+ padding: 24px 0;
+ margin: 0;
 }
 
 .nav-menu-item:hover,
 .nav-menu-item:focus {
- color: var(--active);
+ color: var(--color-active);
 }
 
 .nav-menu-item {
- color: var(--primary-heading);
+ color: var(--color-heading-primary);
  padding: 24px 0;
  text-decoration: none;
 }
@@ -168,10 +170,12 @@ body {
 .address-list {
  display: flex;
  gap: 40px;
+ margin: 0;
+ padding: 24px 0;
 }
 
 .text-contacts {
- color: var(--main-font);
+ color: var(--color-font-main);
  font-size: 16px;
  line-height: 1.5;
  letter-spacing: 0.32px;
@@ -181,7 +185,7 @@ body {
 
 .text-contacts:hover,
 .text-contacts:focus {
- color: var(--active);
+ color: var(--color-active);
 }
 
 
@@ -194,13 +198,13 @@ body {
 
 
 .h1-section {
- background-color: var(--primary-heading);
+ background-color: var(--color-heading-primary);
  padding: 188px 0;
 }
 
 
 .text-h1-first {
- color: var(--brighter-contrast);
+ color: var(--color-contrast-brighter);
  text-align: center;
  font-size: 56px;
  line-height: 1.07;
@@ -209,8 +213,8 @@ body {
 }
 
 .button-order-service {
- color: var(--brighter-contrast);
- background-color: var(--dark-contrast);
+ color: var(--color-contrast-brighter);
+ background-color: var(--color-contrast-dark);
  font-size: 16px;
  font-weight: 500;
  line-height: 1.5;
@@ -226,7 +230,7 @@ body {
 
 .button-order-service:hover,
 .button-order-service:focus {
- background-color: var(--active);
+ background-color: var(--color-active);
 }
 
 
@@ -272,7 +276,7 @@ body {
 
 
 .our-team-section {
- background-color: var(--bright-contrast);
+ background-color: var(--color-contrast-bright);
  padding: 120px 0;
 }
 
@@ -298,7 +302,7 @@ body {
 }
 
 .text-h3-center {
- color: var(--primary-heading);
+ color: var(--color-heading-primary);
  text-align: center;
  font-size: 20px;
  font-weight: 500;
@@ -320,7 +324,7 @@ body {
 
 
 .footer-text {
- color: var(--bright-contrast);
+ color: var(--color-contrast-bright);
  font-size: 16px;
  line-height: 1.5;
  letter-spacing: 0.32px;
@@ -328,7 +332,7 @@ body {
 }
 
 .footer-section {
- background-color: var(--primary-heading);
+ background-color: var(--color-heading-primary);
  padding: 100px 0;
 }
 
@@ -361,16 +365,16 @@ body {
 
 .button-cloud:hover,
 .button-cloud:focus {
- color: var(--brighter-contrast);
- background-color: var(--active);
+ color: var(--color-contrast-brighter);
+ background-color: var(--color-active);
  border: 1px solid transparent;
  border-radius: 4px;
  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .button-cloud {
- color: var(--dark-contrast);
- background-color: var(--bright-contrast);
+ color: var(--color-contrast-dark);
+ background-color: var(--color-contrast-bright);
  text-align: center;
  font-size: 16px;
  font-weight: 500;
@@ -378,7 +382,7 @@ body {
  letter-spacing: 0.64px;
  cursor: pointer;
  padding: 12px 24px;
- border: 1px solid var(--border);
+ border: 1px solid var(--color-border);
  border-radius: 4px;
 }
 
@@ -393,7 +397,7 @@ body {
 
 .app-wrapper {
  padding: 32px 16px;
- border: 1px solid var(--border);
+ border: 1px solid var(--color-border);
  border-top: none;
 }
 
